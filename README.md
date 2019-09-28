@@ -25,4 +25,4 @@ This command going to run the project on the port 6969( ͡° ͜ʖ ͡°)
 * You can change it from package.json just remove `--port` option from `dev` under `scripts` the default port is 1234(I'm not the one who made it, Send your issues to parcel guys)
 
 Made with ❤️ in Egypt.
-* pain and suffer come separated comes with 999$
+* pain and suffer comes separated with 999$
