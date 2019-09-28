@@ -1,0 +1,33 @@
+mixin head(title)
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="/shared/scss/pages/_detail.scss")
+        title #{title}
+
+mixin main(mainpic, author, job, profile, gallery)
+    main
+        .banner
+            img(src=`${mainpic}`, alt="bg")
+            .author
+                h1 #{author}
+                h3 #{job}
+        .story
+            .story-description
+                h3 My story
+                p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum recusandae itaque ex et quasi enim delectus excepturi neque eum est perspiciatis, dolorem voluptas repellat nemo laboriosam illum qui! Maiores, doloremque.
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, at! Nihil vel repellat cumque similique provident, aspernatur accusamus minima tenetur consequatur doloremque odio quae deleniti sit, et aliquid. In, voluptate.
+
+            .profile
+                img(src= `${profile}`, alt="profile")
+
+        .my-work
+            .work-description
+                h3 My work
+                p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum recusandae itaque ex et quasi enim delectus excepturi neque eum est perspiciatis, dolorem voluptas repellat nemo laboriosam illum qui! Maiores, doloremque.
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, at! Nihil vel repellat cumque similique provident, aspernatur accusamus minima tenetur consequatur doloremque odio quae deleniti sit, et aliquid. In, voluptate.
+            .work-gallery
+                - var n = 1;
+                while n <= 6
+                    img(src=`${gallery}${n++}.jpg`, alt="gallery")

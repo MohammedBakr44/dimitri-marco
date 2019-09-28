@@ -1,0 +1,36 @@
+.pages {
+    position: fixed;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    [class^="page"] {
+        cursor: pointer;
+
+        &:hover svg {
+            animation: dot 0.5s ease-in-out infinite alternate;
+        }
+    }
+
+    & > div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    h3 {
+        font-size: 24px;
+        padding: 30px;
+    }
+
+    svg {
+        cursor: pointer;
+        opacity: 0.5;
+        transform: scale(2);
+
+        &.active {
+            opacity: 1;
+        }
+    }
+}

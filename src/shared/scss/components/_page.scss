@@ -1,0 +1,44 @@
+section.page {
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 1fr 5%;
+    &:not(:first-child) {
+        min-height: 100vh;
+    }
+    .hero {
+        overflow: hidden;
+        height: 500px;
+        align-self: center;
+        justify-self: center;
+        display: flex;
+
+        &:hover img[class$="-right"] {
+            transform: translate(0%, 0%)
+        }
+
+        &:hover img[class$="-left"] {
+            transform: translate(0%, 0%)
+        }
+
+        img {
+            height: 500px;
+            transition: transform 0.3s ease-in-out;
+            &[class$="-right"] {
+                transform: translate(0%, 10%)
+            }
+
+            &[class$="-left"] {
+                transform: translate(0%, -10%)
+            }
+            cursor: pointer;
+        }
+    }
+
+    &:nth-child(2) {
+        background: $second-gradient;
+    }
+
+    &:nth-child(3) {
+        background: $third-gradient;
+    }
+}
