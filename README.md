@@ -16,7 +16,7 @@ This is going to install all needed dependencies
 
 Yes you guessed it, This command going to build the project.
 
-## Let's run dat bi\84ch
+## Let's run dat bi*ch
 
 * `yarn run dev`
 
