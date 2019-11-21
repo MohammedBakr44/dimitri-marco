@@ -41,7 +41,7 @@ nav {
     justify-items: center;
     align-items: center;
     text-align: center;
-    transform: var(--open);
+    transform: translateY(-100%);
 
     h3 {
         font-size: 28px;
