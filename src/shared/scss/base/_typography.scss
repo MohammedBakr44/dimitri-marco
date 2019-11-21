@@ -1,9 +1,9 @@
 body {
     font-family: $light;
+    overflow: hidden;
 }
 
 .page {
-
     .details {
         grid-column: 2/3;
         align-self: end;
@@ -14,7 +14,7 @@ body {
         }
 
         h2 {
-            font-size: 42px;    
+            font-size: 42px;
             padding: 20px 0px;
         }
 

@@ -1,7 +1,11 @@
 section.page {
-    min-height: 90vh;
+    min-height: 101vh;
     display: grid;
     grid-template-columns: 5% 1fr 1fr 1fr 5%;
+
+    &:first-child {
+        min-height: 90vh;
+    }
 
     &.chef,
     &.hair {
@@ -24,22 +28,22 @@ section.page {
         }
 
         &:hover img[class$="-right"] {
-            transform: translate(0%, 0%)
+            transform: translate(0%, 0%);
         }
 
         &:hover img[class$="-left"] {
-            transform: translate(0%, 0%)
+            transform: translate(0%, 0%);
         }
 
         img {
             height: 500px;
             transition: transform 0.3s ease-in-out;
             &[class$="-right"] {
-                transform: translate(0%, 10%)
+                transform: translate(0%, 10%);
             }
 
             &[class$="-left"] {
-                transform: translate(0%, -10%)
+                transform: translate(0%, -10%);
             }
             cursor: pointer;
         }
