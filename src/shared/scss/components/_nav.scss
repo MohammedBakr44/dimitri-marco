@@ -10,4 +10,54 @@ nav {
 
 .logo {
     font-size: 20px;
+    z-index: 2;
+
+    @if $open == 0 {
+        color: #000;
+    } @else {
+        color: #fff;
+    }
+}
+
+.menu {
+    z-index: 2;
+    cursor: pointer;
+}
+
+.nav-open {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background-color: #fff;
+    z-index: 1;
+    color: #000;
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 5%;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    transform: translateY($open);
+
+    h3 {
+        font-size: 28px;
+        padding-bottom: 40px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .contact {
+        grid-column: 2/3;
+    }
+
+    .social {
+        .social-links {
+            img {
+                padding: 0 10px;
+            }
+        }
+    }
 }

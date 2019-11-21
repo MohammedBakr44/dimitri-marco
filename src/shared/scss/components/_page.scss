@@ -2,8 +2,15 @@ section.page {
     min-height: 90vh;
     display: grid;
     grid-template-columns: 5% 1fr 1fr 1fr 5%;
-    &:not(:first-child) {
-        min-height: 100vh;
+
+    &.chef,
+    &.hair {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        pointer-events: none;
     }
     .hero {
         overflow: hidden;
@@ -11,6 +18,10 @@ section.page {
         align-self: center;
         justify-self: center;
         display: flex;
+
+        a {
+            display: flex;
+        }
 
         &:hover img[class$="-right"] {
             transform: translate(0%, 0%)
