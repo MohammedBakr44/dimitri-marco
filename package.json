@@ -1,24 +1,28 @@
 {
-    "name": "dimitri-marco",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "dev": "parcel dev src/index.pug -d public --port 6969",
-      "build": "parcel build src/index.pug -d public"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies" : {
-      "node-sass": "^4.12.0",
-      "pug": "^2.0.4",
-      "pug-cli": "^1.0.0-alpha6",
-      "ts-node": "^8.3.0",
-      "typescript": "^3.5.3"
-    },
-    "devDependencies": {
-      "parcel-bundler": "^1.12.3"
-    }
+  "name": "dimitri-marco",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel dev src/index.pug -d public --port 6969",
+    "build": "parcel build src/index.pug -d public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "g": "^2.0.1",
+    "node-sass": "^4.12.0",
+    "postcss": "^7.0.23",
+    "postcss-cli": "^6.1.3",
+    "postcss-export-vars": "^0.2.0",
+    "pug": "^2.0.4",
+    "pug-cli": "^1.0.0-alpha6",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3"
   }
+}
