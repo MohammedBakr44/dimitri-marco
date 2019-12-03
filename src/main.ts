@@ -2,7 +2,7 @@ import { TimelineMax } from "gsap";
 import { TweenMax } from "gsap";
 
 function init() {
-    const slides = document.querySelectorAll(".slide");
+    const slides: NodeListOf<HTMLElement> = document.querySelectorAll(".slide");
     const pages = document.querySelectorAll(".page");
     const backgrounds = [
         `radial-gradient(rgba(43, 55, 96, 1), rgba(11, 16, 35, 1))`,
